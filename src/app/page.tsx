@@ -1,65 +1,277 @@
+"use client";
+
+import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { ArrowRight, Film, Globe, Briefcase, Sparkles } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
+
+const pillars = [
+  {
+    icon: Film,
+    title: "Content Development",
+    description:
+      "We develop premium scripted series with visionary creators worldwide — from concept through production to global distribution.",
+  },
+  {
+    icon: Globe,
+    title: "International Co-Production",
+    description:
+      "We structure complex multi-territory co-productions, forging partnerships with leading broadcasters and platforms across continents.",
+  },
+  {
+    icon: Briefcase,
+    title: "Venture Building",
+    description:
+      "We build and scale independent production companies, transforming early-stage ventures into thriving global content businesses.",
+  },
+  {
+    icon: Sparkles,
+    title: "Strategic Advisory",
+    description:
+      "We advise creators, companies, and investors on innovative financing, distribution, and growth strategies for the evolving media landscape.",
+  },
+];
+
+const featuredProjects = [
+  {
+    title: "KIN",
+    category: "Crime Drama • Ireland",
+    image: "/images/kin-poster.jpg",
+  },
+  {
+    title: "That Dirty Black Bag",
+    category: "Spaghetti Western • Italy",
+    image: "/images/tdbb-poster.jpg",
+  },
+  {
+    title: "Ten Percent",
+    category: "Comedy • UK",
+    image: "/images/ten-percent-poster.jpg",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/images/hero-video.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-background" />
+
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <p className="text-gold/80 uppercase tracking-[0.4em] text-sm mb-6">
+              Global Content &bull; Premium Storytelling
+            </p>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              delay: 0.2,
+              ease: [0.21, 0.47, 0.32, 0.98],
+            }}
+            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8"
           >
-            Documentation
-          </a>
+            Illuminating Stories the World{" "}
+            <span className="text-gold-gradient">Needs to See</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
+          >
+            Lucaville Global partners with filmmakers, creators, and independent
+            companies worldwide to build ambitious projects and scale the
+            ventures that support them.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-charcoal-dark font-semibold px-8 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
+            >
+              Our Projects
+              <ArrowRight size={16} />
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 border border-gold/40 hover:border-gold text-gold hover:bg-gold/5 px-8 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
+            >
+              Get in Touch
+            </Link>
+          </motion.div>
         </div>
-      </main>
-    </div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <div className="w-px h-16 bg-gradient-to-b from-gold/60 to-transparent" />
+        </motion.div>
+      </section>
+
+      {/* Stats Bar */}
+      <section className="border-y border-gold/10 bg-charcoal-dark/50">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            {[
+              { value: "7+", label: "Seasons Produced" },
+              { value: "3+", label: "Films Produced" },
+              { value: "8+", label: "Countries" },
+              { value: "30", label: "Years Experience" },
+              { value: "12+", label: "Platform Partners" },
+            ].map((stat, i) => (
+              <AnimatedSection key={stat.label} delay={i * 0.1}>
+                <div className="text-center">
+                  <p className="font-serif text-2xl md:text-3xl font-bold text-gold mb-2">
+                    {stat.value}
+                  </p>
+                  <p className="text-muted text-sm uppercase tracking-wider">
+                    {stat.label}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              What We Do
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
+              How We Work
+            </h2>
+            <div className="section-divider" />
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {pillars.map((pillar, i) => (
+              <AnimatedSection key={pillar.title} delay={i * 0.15}>
+                <div className="group p-8 bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500">
+                  <pillar.icon
+                    className="text-gold mb-6 group-hover:scale-110 transition-transform duration-500"
+                    size={36}
+                    strokeWidth={1.5}
+                  />
+                  <h3 className="font-serif text-2xl font-semibold mb-4">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-muted leading-relaxed">
+                    {pillar.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="py-24 md:py-32 bg-charcoal-dark/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimatedSection className="text-center mb-16">
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              Our Work
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
+              Featured Projects
+            </h2>
+            <div className="section-divider" />
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredProjects.map((project, i) => (
+              <AnimatedSection key={project.title} delay={i * 0.15}>
+                <Link href="/projects" className="block">
+                  <div className="group h-full bg-charcoal border border-gold/10 hover:border-gold/30 transition-all duration-500 overflow-hidden">
+                    <div className="relative aspect-[2/3] overflow-hidden">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60" />
+                    </div>
+                    <div className="p-6">
+                      <p className="text-gold/70 text-xs uppercase tracking-wider mb-2">
+                        {project.category}
+                      </p>
+                      <h3 className="font-serif text-xl font-semibold group-hover:text-gold transition-colors">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </div>
+                </Link>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection className="text-center mt-12">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors uppercase tracking-wider text-sm"
+            >
+              View All Projects
+              <ArrowRight size={16} />
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection>
+            <p className="font-serif text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              Follow us as we begin the work of{" "}
+              <span className="text-gold-gradient">illumination</span>.
+            </p>
+            <div className="section-divider mb-10" />
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-charcoal-dark font-semibold px-10 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
+            >
+              Start a Conversation
+              <ArrowRight size={16} />
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
   );
 }
