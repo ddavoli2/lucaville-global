@@ -57,7 +57,7 @@ export default function About() {
             <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
               Our Mission
             </p>
-            <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed text-foreground/90 mb-8">
+            <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed text-foreground mb-8">
               &ldquo;Luca&rdquo; means the bringer of light.
             </blockquote>
             <p className="text-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
