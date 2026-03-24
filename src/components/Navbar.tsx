@@ -50,12 +50,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-6 flex-1">
+          <div className="hidden xl:flex items-center gap-8 flex-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-wide text-muted hover:text-gold transition-colors duration-300 uppercase whitespace-nowrap"
+                className="text-base tracking-wide text-muted hover:text-gold transition-colors duration-300 uppercase whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="xl:hidden text-foreground hover:text-gold transition-colors"
+            className="xl:hidden ml-auto text-foreground hover:text-gold transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

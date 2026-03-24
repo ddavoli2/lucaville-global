@@ -76,7 +76,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <p className="text-gold font-semibold uppercase tracking-[0.4em] text-base md:text-lg mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <p className="text-gold font-bold uppercase tracking-[0.4em] text-lg md:text-xl lg:text-2xl mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_8px_rgb(0_0_0_/_80%),_0_0_20px_rgb(0_0_0_/_60%)]">
               Global Content &bull; Premium Storytelling
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ export default function Home() {
               delay: 0.2,
               ease: [0.21, 0.47, 0.32, 0.98],
             }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8"
+            className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8"
           >
             Illuminating Stories the World{" "}
             <span className="text-gold-gradient">Needs to See</span>
@@ -99,7 +99,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+            className="text-foreground/90 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_8px_rgb(0_0_0_/_80%),_0_0_20px_rgb(0_0_0_/_60%)]"
           >
             Lucaville Global partners with filmmakers, creators, and independent
             companies worldwide to build ambitious projects and scale the
@@ -137,8 +137,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {[
-              { value: "8+", label: "Seasons Produced" },
-              { value: "2+", label: "Films Produced" },
+              { value: "10+", label: "Seasons Produced" },
+              { value: "3+", label: "Films Produced" },
               { value: "8+", label: "Countries" },
               { value: "30", label: "Years Experience" },
               { value: "12+", label: "Platform Partners" },
@@ -174,9 +174,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {pillars.map((pillar, i) => (
               <AnimatedSection key={pillar.title} delay={i * 0.15}>
-                <div className="group p-8 bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500">
+                <div className="group p-8 bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500 text-center">
                   <pillar.icon
-                    className="text-gold mb-6 group-hover:scale-110 transition-transform duration-500"
+                    className="text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"
                     size={36}
                     strokeWidth={1.5}
                   />
@@ -203,7 +203,10 @@ export default function Home() {
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
               Featured Projects
             </h2>
-            <div className="section-divider" />
+            <p className="text-muted text-base max-w-2xl mx-auto mt-4">
+              Projects executive produced by David Davoli, Founder &amp; CEO of Lucaville Global.
+            </p>
+            <div className="section-divider mt-6" />
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -221,7 +224,7 @@ export default function Home() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60" />
                     </div>
-                    <div className="p-6">
+                    <div className="p-6 text-center">
                       <p className="text-gold/70 text-xs uppercase tracking-wider mb-2">
                         {project.category}
                       </p>
@@ -256,13 +259,6 @@ export default function Home() {
               <span className="text-gold-gradient">illumination</span>.
             </p>
             <div className="section-divider mb-10" />
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-charcoal-dark font-semibold px-10 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
-            >
-              Start a Conversation
-              <ArrowRight size={16} />
-            </Link>
           </AnimatedSection>
         </div>
       </section>

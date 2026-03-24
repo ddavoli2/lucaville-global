@@ -16,7 +16,7 @@ const values = [
     icon: Handshake,
     title: "Enduring Partnerships",
     description:
-      "Our relationships are built on transparency, shared values, and a commitment to outcomes that matter — for creators and companies alike.",
+      "Our relationships are built on transparency, integrity, and shared values. We believe trust is the foundation of every successful collaboration — and we earn it through honest dialogue, aligned incentives, and a commitment to outcomes that matter.",
   },
   {
     icon: Lightbulb,

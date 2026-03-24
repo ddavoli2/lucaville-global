@@ -5,6 +5,17 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const projects = [
   {
+    title: "Tiny Desk Brasil",
+    category: "Concert Series",
+    format: "Series",
+    region: "Brazil",
+    network: "YouTube",
+    year: "2025",
+    image: "/images/tiny-desk-brazil-poster.png",
+    description:
+      "Tiny Desk Brasil is the official Brazilian edition of the iconic NPR music series, featuring intimate, stripped-down live performances showcasing the rich diversity and creativity of Brazilian music.",
+  },
+  {
     title: "No Beast So Fierce",
     category: "Crime / Drama",
     format: "Feature Film",
@@ -18,7 +29,7 @@ const projects = [
   {
     title: "The Snow Sister",
     category: "Family Drama",
-    format: "Feature",
+    format: "Feature Film",
     region: "Norway",
     network: "Netflix",
     year: "2024",
@@ -84,7 +95,7 @@ const projects = [
   {
     title: "The Front Runner",
     category: "Political Drama",
-    format: "Feature",
+    format: "Feature Film",
     region: "US",
     network: "Columbia Pictures / Sony Pictures Releasing",
     year: "2018",
@@ -117,7 +128,7 @@ export default function Projects() {
               Our Work
             </p>
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
-              Featured Projects
+              Projects
             </h1>
             <p className="text-muted text-lg max-w-2xl mx-auto">
               Projects executive produced by David Davoli, Founder &amp; CEO of Lucaville Global.
@@ -147,7 +158,7 @@ export default function Projects() {
 
                   {/* Info */}
                   <div className="p-8 flex-1 flex flex-col">
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-3 mb-3 flex-wrap">
                       <span className="text-gold/70 text-xs uppercase tracking-wider">
                         {project.category}
                       </span>
