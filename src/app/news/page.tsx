@@ -5,6 +5,16 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const articles = [
   {
+    date: "March 2026",
+    category: "Press",
+    title:
+      "David Davoli's Lucaville Global Launches JV With Italy's Titanus; First Projects Include 'The Treasure Of San Gennaro' Heist Comedy Remake With Lawrence Bender",
+    excerpt:
+      "Deadline reports on Lucaville Global's joint venture with Italy's historic Titanus studio, with first projects including a remake of the classic heist comedy The Treasure of San Gennaro, produced with Lawrence Bender.",
+    url: "https://deadline.com/2026/03/lucaville-titanus-jv-italy-lawrence-bender-dario-argento-1236762802/",
+    source: "Deadline",
+  },
+  {
     date: "May 2026",
     category: "Press",
     title:
