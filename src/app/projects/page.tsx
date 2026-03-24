@@ -12,7 +12,7 @@ const projects = [
     network: "YouTube",
     year: "2025",
     image: "/images/tiny-desk-brazil-poster.png",
-    trailer: "https://www.youtube.com/@TinyDeskBrasil",
+    trailer: "https://www.youtube.com/watch?v=XUd4nYZxOi0",
     description:
       "Tiny Desk Brasil is the official Brazilian edition of the iconic NPR music series, featuring intimate, stripped-down live performances showcasing the rich diversity and creativity of Brazilian music.",
   },
