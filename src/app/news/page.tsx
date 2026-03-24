@@ -15,22 +15,13 @@ const articles = [
     source: "C21Media",
   },
   {
-    date: "December 2021",
+    date: "December 2024",
     category: "Press",
-    title: "Keeping It in the Family",
+    title: "Peak TV Is Over, Welcome to Local TV",
     excerpt:
-      "Drama Quarterly explores the creation of KIN, the Irish crime drama about the Kinsella family's gangland conflicts, with showrunner Peter McKenna discussing how the series prioritizes emotional consequences over crime procedurals.",
-    url: "https://dramaquarterly.com/keeping-it-in-the-family-2/",
-    source: "Drama Quarterly",
-  },
-  {
-    date: "February 2022",
-    category: "Press",
-    title: "'Call My Agent' U.K. Producers Talk Storylines, Celebrity Cameos",
-    excerpt:
-      "Variety explores the U.K. adaptation of Call My Agent, with producers discussing the show's narrative direction and plans for celebrity guest appearances in the British version of the hit French format.",
-    url: "https://variety.com/2022/tv/global/call-my-agent-u-k-remake-1235158345/",
-    source: "Variety",
+      "The Hollywood Reporter covers a Red Sea International Film Festival panel exploring the shift from Peak TV to locally-driven content, featuring industry leaders discussing the future of international storytelling.",
+    url: "https://www.hollywoodreporter.com/business/business-news/peak-tv-local-tv-rsiff-panel-1236080418/",
+    source: "The Hollywood Reporter",
   },
   {
     date: "April 2022",
@@ -42,6 +33,24 @@ const articles = [
     source: "The New York Times",
   },
   {
+    date: "February 2022",
+    category: "Press",
+    title: "'Call My Agent' U.K. Producers Talk Storylines, Celebrity Cameos",
+    excerpt:
+      "Variety explores the U.K. adaptation of Call My Agent, with producers discussing the show's narrative direction and plans for celebrity guest appearances in the British version of the hit French format.",
+    url: "https://variety.com/2022/tv/global/call-my-agent-u-k-remake-1235158345/",
+    source: "Variety",
+  },
+  {
+    date: "December 2021",
+    category: "Press",
+    title: "Keeping It in the Family",
+    excerpt:
+      "Drama Quarterly explores the creation of KIN, the Irish crime drama about the Kinsella family's gangland conflicts, with showrunner Peter McKenna discussing how the series prioritizes emotional consequences over crime procedurals.",
+    url: "https://dramaquarterly.com/keeping-it-in-the-family-2/",
+    source: "Drama Quarterly",
+  },
+  {
     date: "November 2021",
     category: "Press",
     title:
@@ -50,6 +59,15 @@ const articles = [
       "AMC+ secures exclusive streaming rights to the eight-part spaghetti western series That Dirty Black Bag, featuring an ensemble cast including Dominic Cooper and Douglas Booth, set to premiere in spring 2022.",
     url: "https://www.amcnetworks.com/press-releases/amc-acquires-worldwide-premiere-of-that-dirty-black-bag-wdominic-cooper-douglas-booth/",
     source: "AMC Networks",
+  },
+  {
+    date: "June 2021",
+    category: "Press",
+    title: "Sundance Now Nabs U.S. Premiere Rights to 'Call My Agent!'",
+    excerpt:
+      "Sundance Now acquires exclusive U.S. premiere rights to the French series Call My Agent!, bringing the acclaimed international television program to American audiences.",
+    url: "https://variety.com/2021/tv/news/sundance-now-call-my-agent-british-remake-1235023272/",
+    source: "Variety",
   },
 ];
 
