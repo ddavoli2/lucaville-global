@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Tiny Desk Brasil",
     category: "Concert Series",
-    format: "Series",
+    format: "30 x 20\"",
     region: "Brazil",
     network: "YouTube",
     year: "2025",
