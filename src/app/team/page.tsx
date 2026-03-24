@@ -101,6 +101,37 @@ export default function Team() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Concetta Froio */}
+      <section className="py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12 items-start">
+              {/* Photo Placeholder */}
+              <div className="relative aspect-[3/4] overflow-hidden border border-gold/20 bg-charcoal flex items-center justify-center">
+                <span className="text-muted text-sm uppercase tracking-wider">Photo Coming Soon</span>
+              </div>
+
+              {/* Bio */}
+              <div>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold mb-2">
+                  Concetta Froio
+                </h2>
+                <p className="text-gold uppercase tracking-[0.3em] text-sm mb-8">
+                  Coordinator, Global Film &amp; TV
+                </p>
+                <div className="section-divider mb-8 !mx-0" />
+
+                <div className="space-y-5 text-foreground/80 leading-relaxed">
+                  <p>
+                    Bio coming soon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
     </>
   );
 }
