@@ -64,7 +64,7 @@ export default function Home() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/images/hero-video-small.mp4" type="video/mp4" />
+          <source src="/images/hero-video-new.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/25" />
