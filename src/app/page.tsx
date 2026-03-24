@@ -140,7 +140,7 @@ export default function Home() {
               { value: "10+", label: "Seasons Produced" },
               { value: "3+", label: "Films Produced" },
               { value: "8+", label: "Countries" },
-              { value: "30", label: "Years Experience" },
+              { value: "30+", label: "Years Experience" },
             ].map((stat, i) => (
               <AnimatedSection key={stat.label} delay={i * 0.1}>
                 <div className="text-center">
