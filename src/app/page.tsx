@@ -76,7 +76,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <p className="text-gold font-bold uppercase tracking-[0.4em] text-lg md:text-xl lg:text-2xl mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_8px_rgb(0_0_0_/_80%),_0_0_20px_rgb(0_0_0_/_60%)]">
+            <p className="text-gold font-semibold uppercase tracking-[0.4em] text-base md:text-lg mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               Global Content &bull; Premium Storytelling
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ export default function Home() {
               delay: 0.2,
               ease: [0.21, 0.47, 0.32, 0.98],
             }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8"
           >
             Illuminating Stories the World{" "}
             <span className="text-gold-gradient">Needs to See</span>
@@ -99,7 +99,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-foreground/90 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_8px_rgb(0_0_0_/_80%),_0_0_20px_rgb(0_0_0_/_60%)]"
+            className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
           >
             Lucaville Global partners with filmmakers, creators, and independent
             companies worldwide to build ambitious projects and scale the
