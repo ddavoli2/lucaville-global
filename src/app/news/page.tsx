@@ -34,6 +34,15 @@ const articles = [
   },
   {
     date: "February 2022",
+    category: "Podcast",
+    title: "C21 Podcast: Kelly Edwards, David Davoli, Kristen V Carter & Claire Finn",
+    excerpt:
+      "David Davoli joins the C21 podcast to discuss BRON Studios' expanding television operations alongside industry leaders covering topics in content creation and the evolving media landscape.",
+    url: "https://www.c21media.net/c21podcasts/kelly-edwards-david-davoli-kristen-v-carter-claire-finn/",
+    source: "C21Media",
+  },
+  {
+    date: "February 2022",
     category: "Press",
     title: "'Call My Agent' U.K. Producers Talk Storylines, Celebrity Cameos",
     excerpt:
