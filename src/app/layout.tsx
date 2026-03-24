@@ -48,8 +48,46 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Lucaville Global",
+    legalName: "Lucaville Global, Inc.",
+    url: "https://lucavilleglobal.com",
+    logo: "https://lucavilleglobal.com/images/lucaville-logo.jpg",
+    description:
+      "Lucaville Global partners with filmmakers, creators, and independent companies worldwide to build ambitious projects and scale the ventures that support them.",
+    founder: {
+      "@type": "Person",
+      name: "David Davoli",
+      jobTitle: "Founder & CEO",
+      sameAs: "https://www.linkedin.com/in/daviddavoli/",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "New York",
+      addressRegion: "NY",
+      addressCountry: "US",
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/lucaville-global/",
+      "https://www.instagram.com/lucavilleglobal",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "info@lucavilleglobal.com",
+      contactType: "General Inquiry",
+    },
+  };
+
   return (
     <html lang="en" className="dark">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-background text-foreground`}
       >
