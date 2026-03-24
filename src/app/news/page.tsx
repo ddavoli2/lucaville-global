@@ -15,9 +15,9 @@ const articles = [
     source: "C21Media",
   },
   {
-    date: "March 2026",
+    date: "November 2025",
     category: "Press",
-    title: "Red Sea Unveils Industry Program for 2026",
+    title: "Red Sea Unveils Industry Program for 2025",
     excerpt:
       "Variety covers the Red Sea Film Festival's expanded industry program, highlighting new professional development and support initiatives for filmmakers in the global entertainment sector.",
     url: "https://variety.com/2025/film/global/red-sea-souk-industry-program-2026-1236591543/",
