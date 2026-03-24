@@ -10,59 +10,10 @@ const projects = [
     format: "Feature Film",
     region: "Germany",
     network: "Goodfellas",
+    year: "2025",
     image: "/images/no-beast-so-fierce-poster.jpg",
     description:
       "In this modern retelling of Shakespeare's Richard III, an ambitious Arab woman named Rashida plots a bloody path to power, eliminating her family's male leadership to become the undisputed boss of the Berlin criminal underworld.",
-  },
-  {
-    title: "The Idol",
-    category: "Drama",
-    format: "8 x 60\"",
-    region: "US",
-    network: "HBO",
-    image: "/images/the-idol-poster.jpg",
-    description:
-      "A pop star trying to stage a comeback after a mental breakdown enters a complicated and high-stakes relationship with a self-help guru and secret cult leader.",
-  },
-  {
-    title: "KIN",
-    category: "Crime Drama",
-    format: "16 x 60\"",
-    region: "Ireland",
-    network: "AMC+",
-    image: "/images/kin-poster.jpg",
-    description:
-      "A boy is killed and his family embarks on a gangland war with an international cartel; but the Kinsellas have something the cartel does not: the unbreakable bonds of blood and family.",
-  },
-  {
-    title: "That Dirty Black Bag",
-    category: "Spaghetti Western",
-    format: "8 x 60\"",
-    region: "Italy",
-    network: "AMC+",
-    image: "/images/tdbb-poster.jpg",
-    description:
-      "Red Bill is a ruthless bounty hunter who decapitates his victims and stuffs their heads into a dirty black bag rather than transporting their entire corpses.",
-  },
-  {
-    title: "Ten Percent",
-    category: "Comedy",
-    format: "8 x 60\"",
-    region: "UK",
-    network: "Amazon Prime",
-    image: "/images/ten-percent-poster.jpg",
-    description:
-      "A London talent agency deals with personal and professional crises while catering to celebrity clients and scrambling to stay afloat after the sudden death of their founder.",
-  },
-  {
-    title: "The Defeated",
-    category: "Crime Thriller",
-    format: "8 x 60\"",
-    region: "Germany",
-    network: "Netflix",
-    image: "/images/the-defeated-poster.jpg",
-    description:
-      "In 1946 Berlin, an American cop searches for his missing brother while helping a novice German policewoman fight the violent crimes engulfing the city.",
   },
   {
     title: "The Snow Sister",
@@ -70,9 +21,65 @@ const projects = [
     format: "Feature",
     region: "Norway",
     network: "Netflix",
+    year: "2024",
     image: "/images/snow-sister-poster.jpg",
     description:
       "A grieving young boy who thinks Christmas is cancelled finds hope and friendship through a mysterious, joyful girl who helps him heal after the loss of his sister.",
+  },
+  {
+    title: "The Idol",
+    category: "Drama",
+    format: "8 x 60\"",
+    region: "US",
+    network: "HBO",
+    year: "2023",
+    image: "/images/the-idol-poster.jpg",
+    description:
+      "A pop star trying to stage a comeback after a mental breakdown enters a complicated and high-stakes relationship with a self-help guru and secret cult leader.",
+  },
+  {
+    title: "Ten Percent",
+    category: "Comedy",
+    format: "8 x 60\"",
+    region: "UK",
+    network: "Amazon Prime",
+    year: "2022",
+    image: "/images/ten-percent-poster.jpg",
+    description:
+      "A London talent agency deals with personal and professional crises while catering to celebrity clients and scrambling to stay afloat after the sudden death of their founder.",
+  },
+  {
+    title: "That Dirty Black Bag",
+    category: "Spaghetti Western",
+    format: "8 x 60\"",
+    region: "Italy",
+    network: "AMC+",
+    year: "2022",
+    image: "/images/tdbb-poster.jpg",
+    description:
+      "Red Bill is a ruthless bounty hunter who decapitates his victims and stuffs their heads into a dirty black bag rather than transporting their entire corpses.",
+  },
+  {
+    title: "KIN",
+    category: "Crime Drama",
+    format: "16 x 60\"",
+    region: "Ireland",
+    network: "AMC+",
+    year: "2021",
+    image: "/images/kin-poster.jpg",
+    description:
+      "A boy is killed and his family embarks on a gangland war with an international cartel; but the Kinsellas have something the cartel does not: the unbreakable bonds of blood and family.",
+  },
+  {
+    title: "The Defeated",
+    category: "Crime Thriller",
+    format: "8 x 60\"",
+    region: "Germany",
+    network: "Netflix",
+    year: "2021",
+    image: "/images/the-defeated-poster.jpg",
+    description:
+      "In 1946 Berlin, an American cop searches for his missing brother while helping a novice German policewoman fight the violent crimes engulfing the city.",
   },
   {
     title: "The Front Runner",
@@ -80,6 +87,7 @@ const projects = [
     format: "Feature",
     region: "US",
     network: "Columbia Pictures / Sony Pictures Releasing",
+    year: "2018",
     image: "/images/front-runner-poster.jpg",
     description:
       "Gary Hart was going to be President. Instead he changed American politics forever.",
@@ -90,6 +98,7 @@ const projects = [
     format: "2 x 120\"",
     region: "US",
     network: "A&E",
+    year: "2011",
     image: "/images/bag-of-bones-poster.jpg",
     description:
       "Following his wife's sudden death, a bestselling author (Pierce Brosnan) retreats to his Maine lake house, where he is plagued by nightmares, ghostly visitations, and a dark, century-old town secret.",
@@ -149,6 +158,10 @@ export default function Projects() {
                       <span className="text-muted/30">|</span>
                       <span className="text-muted/60 text-xs">
                         {project.region}
+                      </span>
+                      <span className="text-muted/30">|</span>
+                      <span className="text-muted/60 text-xs">
+                        {project.year}
                       </span>
                     </div>
                     <h3 className="font-serif text-2xl font-bold mb-2">
