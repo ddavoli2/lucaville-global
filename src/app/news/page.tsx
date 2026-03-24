@@ -15,6 +15,15 @@ const articles = [
     source: "C21Media",
   },
   {
+    date: "March 2026",
+    category: "Press",
+    title: "Red Sea Unveils Industry Program for 2026",
+    excerpt:
+      "Variety covers the Red Sea Film Festival's expanded industry program, highlighting new professional development and support initiatives for filmmakers in the global entertainment sector.",
+    url: "https://variety.com/2025/film/global/red-sea-souk-industry-program-2026-1236591543/",
+    source: "Variety",
+  },
+  {
     date: "December 2024",
     category: "Press",
     title: "Peak TV Is Over, Welcome to Local TV",
