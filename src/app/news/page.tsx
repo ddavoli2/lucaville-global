@@ -105,6 +105,24 @@ const articles = [
     url: "https://dramaquarterly.com/out-of-the-shadows/",
     source: "Drama Quarterly",
   },
+  {
+    date: "April 2020",
+    category: "Press",
+    title: "What's in a Name? How U.S. Talent Buoys Sales of European Drama",
+    excerpt:
+      "Variety examines how casting American actors in European television dramas, including Shadowplay (The Defeated), enhances their commercial appeal and sales potential in international markets.",
+    url: "https://variety.com/2020/biz/actors/miptv-us-talent-buoys-european-drama-sales-helen-hunt-world-on-fire-shadowplay-1203549970/",
+    source: "Variety",
+  },
+  {
+    date: "July 2019",
+    category: "Press",
+    title: "Tandem's Berlin-Set 'Shadowplay' Goes for Edge",
+    excerpt:
+      "A look at the production of Shadowplay (The Defeated), starring Taylor Kitsch, a Berlin-set historical drama that explores survival and moral complexity in a devastated post-WWII city divided between Allied powers.",
+    url: "https://www.yahoo.com/entertainment/tandem-berlin-set-shadowplay-goes-150039571.html",
+    source: "Yahoo Entertainment",
+  },
 ];
 
 export default function News() {
