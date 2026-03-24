@@ -24,6 +24,15 @@ const articles = [
     source: "The Hollywood Reporter",
   },
   {
+    date: "September 2024",
+    category: "Press",
+    title: "San Sebastian: CAA Media Finance Unveils Creative Investors' Conference",
+    excerpt:
+      "Variety covers the launch of the Creative Investors' Conference at San Sebastian Film Festival, an event connecting entertainment industry investors with creative financing opportunities in the global film sector.",
+    url: "https://variety.com/2024/film/global/caa-media-finance-creative-investors-conference-2-1236145771/",
+    source: "Variety",
+  },
+  {
     date: "April 2022",
     category: "Press",
     title: "Can 'Ten Percent' Eliminate the Language Barrier in Streaming?",
