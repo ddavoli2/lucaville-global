@@ -25,12 +25,21 @@ export const metadata: Metadata = {
     url: "https://lucavilleglobal.com",
     siteName: "Lucaville Global",
     type: "website",
+    images: [
+      {
+        url: "https://lucavilleglobal.com/images/lucaville-logo.jpg",
+        width: 1536,
+        height: 1024,
+        alt: "Lucaville Global",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lucaville Global | Global Content • Premium Storytelling",
     description:
       "Lucaville Global partners with filmmakers, creators, and independent companies worldwide to build ambitious projects and scale the ventures that support them.",
+    images: ["https://lucavilleglobal.com/images/lucaville-logo.jpg"],
   },
 };
 
