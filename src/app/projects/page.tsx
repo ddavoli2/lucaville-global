@@ -5,6 +5,16 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const projects = [
   {
+    title: "No Beast So Fierce",
+    category: "Crime / Drama",
+    format: "Feature Film",
+    region: "Germany",
+    network: "Goodfellas",
+    image: "/images/no-beast-so-fierce-poster.jpg",
+    description:
+      "In this modern retelling of Shakespeare's Richard III, an ambitious Arab woman named Rashida plots a bloody path to power, eliminating her family's male leadership to become the undisputed boss of the Berlin criminal underworld.",
+  },
+  {
     title: "The Idol",
     category: "Drama",
     format: "8 x 60\"",
