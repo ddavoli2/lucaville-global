@@ -111,7 +111,7 @@ export default function Team() {
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
-            <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-12 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-[400px_1fr] gap-12 items-start">
               {/* Photo Placeholder */}
               <div className="relative aspect-[3/4] overflow-hidden border border-gold/20 bg-charcoal flex items-center justify-center">
                 <span className="text-muted text-sm uppercase tracking-wider">Photo Coming Soon</span>
