@@ -31,8 +31,7 @@ export default function Contact() {
               Contact <span className="text-gold-gradient">Us</span>
             </h1>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              While we are unable to accept unsolicited submissions, we would
-              love to hear from you. Ready to explore how Lucaville Global can
+              Ready to explore how Lucaville Global can
               support your objectives? We&apos;d welcome the opportunity to connect.
             </p>
           </AnimatedSection>
@@ -99,7 +98,6 @@ export default function Contact() {
                     <select className="w-full bg-charcoal-dark border border-gold/10 focus:border-gold/40 px-4 py-3 text-foreground outline-none transition-colors">
                       <option value="">Select a topic</option>
                       <option value="advisory">Strategic Advisory</option>
-                      <option value="investment">Investment Facilitation</option>
                       <option value="partnership">Partnership Inquiry</option>
                       <option value="media">Media & Press</option>
                       <option value="other">Other</option>
@@ -133,7 +131,8 @@ export default function Contact() {
                     Reach Us Directly
                   </h2>
                   <p className="text-muted leading-relaxed">
-                    Whether you have a specific engagement in mind or simply wish
+                    While we are unable to accept unsolicited submissions, we would
+                    love to hear from you. Whether you have a specific engagement in mind or simply wish
                     to learn more about our capabilities, our team is ready to
                     assist.
                   </p>
