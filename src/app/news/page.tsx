@@ -42,6 +42,15 @@ const articles = [
     source: "Variety",
   },
   {
+    date: "June 2024",
+    category: "Press",
+    title: "Rio2C 2024: Globo Discussed Opportunities for Entertainment Globalization",
+    excerpt:
+      "Señal News covers a Rio2C panel exploring how local entertainment companies can expand globally, with industry leaders discussing co-productions, format sales, and new partnership strategies in the international market.",
+    url: "https://senalnews.com/en/events/rio2c-2024-globo-discussed-opportunities-for-entertainment-globalization-",
+    source: "Señal News",
+  },
+  {
     date: "April 2022",
     category: "Press",
     title: "Can 'Ten Percent' Eliminate the Language Barrier in Streaming?",
