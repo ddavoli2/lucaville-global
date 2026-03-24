@@ -70,6 +70,15 @@ const articles = [
     source: "AMC Networks",
   },
   {
+    date: "July 2021",
+    category: "Press",
+    title: "'Call My Agent!' UK Remake Lands at Sundance Now",
+    excerpt:
+      "Deadline reports that the British adaptation of the hit French series Call My Agent! has been acquired by Sundance Now, expanding the show into the English-language market.",
+    url: "https://deadline.com/2021/07/call-my-agent-uk-sundance-now-u-s-1234796087/",
+    source: "Deadline",
+  },
+  {
     date: "June 2021",
     category: "Press",
     title: "Sundance Now Nabs U.S. Premiere Rights to 'Call My Agent!'",
@@ -77,6 +86,24 @@ const articles = [
       "Sundance Now acquires exclusive U.S. premiere rights to the French series Call My Agent!, bringing the acclaimed international television program to American audiences.",
     url: "https://variety.com/2021/tv/news/sundance-now-call-my-agent-british-remake-1235023272/",
     source: "Variety",
+  },
+  {
+    date: "February 2021",
+    category: "Press",
+    title: "AMC+ Scores Trio of Acclaimed Crime Dramas Kin, Too Close, and Cold Courage",
+    excerpt:
+      "AMC+ announces the acquisition of three acclaimed crime dramas including the Irish-set series Kin with Charlie Cox, launching on the streaming service in 2021.",
+    url: "https://www.amc.com/blogs/amc-scores-trio-of-acclaimed-crime-dramas-kin-too-close-and-cold-courage--1010176",
+    source: "AMC",
+  },
+  {
+    date: "October 2020",
+    category: "Press",
+    title: "Out of the Shadows",
+    excerpt:
+      "Drama Quarterly goes behind the scenes in Prague with the cast and crew of Shadowplay (The Defeated), a crime drama set in post-war Berlin featuring characters with competing interests battling for control in a lawless city.",
+    url: "https://dramaquarterly.com/out-of-the-shadows/",
+    source: "Drama Quarterly",
   },
 ];
 
