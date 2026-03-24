@@ -12,6 +12,7 @@ const projects = [
     network: "YouTube",
     year: "2025",
     image: "/images/tiny-desk-brazil-poster.png",
+    trailer: "https://www.youtube.com/@TinyDeskBrasil",
     description:
       "Tiny Desk Brasil is the official Brazilian edition of the iconic NPR music series, featuring intimate, stripped-down live performances showcasing the rich diversity and creativity of Brazilian music.",
   },
@@ -23,6 +24,7 @@ const projects = [
     network: "Goodfellas",
     year: "2025",
     image: "/images/no-beast-so-fierce-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=pKU_QpLl2aM",
     description:
       "In this modern retelling of Shakespeare's Richard III, an ambitious Arab woman named Rashida plots a bloody path to power, eliminating her family's male leadership to become the undisputed boss of the Berlin criminal underworld.",
   },
@@ -34,6 +36,7 @@ const projects = [
     network: "Netflix",
     year: "2024",
     image: "/images/snow-sister-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=ekgJs0D0RYQ",
     description:
       "A grieving young boy who thinks Christmas is cancelled finds hope and friendship through a mysterious, joyful girl who helps him heal after the loss of his sister.",
   },
@@ -45,6 +48,7 @@ const projects = [
     network: "HBO",
     year: "2023",
     image: "/images/the-idol-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=QrnJMmWhlYE",
     description:
       "A pop star trying to stage a comeback after a mental breakdown enters a complicated and high-stakes relationship with a self-help guru and secret cult leader.",
   },
@@ -56,6 +60,7 @@ const projects = [
     network: "Amazon Prime",
     year: "2022",
     image: "/images/ten-percent-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=-gQ_I-tVk9E",
     description:
       "A London talent agency deals with personal and professional crises while catering to celebrity clients and scrambling to stay afloat after the sudden death of their founder.",
   },
@@ -67,6 +72,7 @@ const projects = [
     network: "AMC+",
     year: "2022",
     image: "/images/tdbb-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=_da1DpqQIso",
     description:
       "Red Bill is a ruthless bounty hunter who decapitates his victims and stuffs their heads into a dirty black bag rather than transporting their entire corpses.",
   },
@@ -78,6 +84,7 @@ const projects = [
     network: "AMC+",
     year: "2021",
     image: "/images/kin-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=_byGxUym7HQ",
     description:
       "A boy is killed and his family embarks on a gangland war with an international cartel; but the Kinsellas have something the cartel does not: the unbreakable bonds of blood and family.",
   },
@@ -89,6 +96,7 @@ const projects = [
     network: "Netflix",
     year: "2021",
     image: "/images/the-defeated-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=4dXKQXRs7zo",
     description:
       "In 1946 Berlin, an American cop searches for his missing brother while helping a novice German policewoman fight the violent crimes engulfing the city.",
   },
@@ -100,6 +108,7 @@ const projects = [
     network: "Columbia Pictures / Sony Pictures Releasing",
     year: "2018",
     image: "/images/front-runner-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=BAOYDcnVx6E",
     description:
       "Gary Hart was going to be President. Instead he changed American politics forever.",
   },
@@ -111,6 +120,7 @@ const projects = [
     network: "A&E",
     year: "2011",
     image: "/images/bag-of-bones-poster.jpg",
+    trailer: "https://www.youtube.com/watch?v=Y57K6IoAj7Y",
     description:
       "Following his wife's sudden death, a bestselling author (Pierce Brosnan) retreats to his Maine lake house, where he is plagued by nightmares, ghostly visitations, and a dark, century-old town secret.",
   },
@@ -143,7 +153,12 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, i) => (
               <AnimatedSection key={project.title} delay={i * 0.1}>
-                <div className="group h-full bg-charcoal border border-gold/10 hover:border-gold/30 transition-all duration-500 flex flex-col overflow-hidden">
+                <a
+                  href={project.trailer}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group h-full bg-charcoal border border-gold/10 hover:border-gold/30 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
+                >
                   {/* Poster */}
                   <div className="relative aspect-[2/3] overflow-hidden">
                     <Image
@@ -154,6 +169,14 @@ export default function Projects() {
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60" />
+                    {/* Play button overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center">
+                        <svg className="w-7 h-7 text-charcoal-dark ml-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Info */}
@@ -175,7 +198,7 @@ export default function Projects() {
                         {project.year}
                       </span>
                     </div>
-                    <h3 className="font-serif text-2xl font-bold mb-2">
+                    <h3 className="font-serif text-2xl font-bold mb-2 group-hover:text-gold transition-colors">
                       {project.title}
                     </h3>
                     {project.network && (
@@ -187,7 +210,7 @@ export default function Projects() {
                       {project.description}
                     </p>
                   </div>
-                </div>
+                </a>
               </AnimatedSection>
             ))}
           </div>
