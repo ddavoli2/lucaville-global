@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "The Snow Sister",
-    category: "Film",
+    category: "Family Drama",
     format: "Feature",
     region: "Norway",
     network: "Netflix",
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "The Front Runner",
-    category: "Film",
+    category: "Political Drama",
     format: "Feature",
     region: "US",
     network: "Columbia Pictures / Sony Pictures Releasing",
