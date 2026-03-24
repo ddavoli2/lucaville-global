@@ -15,6 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "sA-fBiVchYGGIsOwMMEJBZg5GlBRkWBfhDc1aUcBVJ4",
+  },
   title: "Lucaville Global | Global Content • Premium Storytelling",
   description:
     "Lucaville Global partners with filmmakers, creators, and independent companies worldwide to build ambitious projects and scale the ventures that support them.",
