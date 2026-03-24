@@ -16,7 +16,7 @@ const values = [
     icon: Handshake,
     title: "Enduring Partnerships",
     description:
-      "Our relationships are built on integrity, shared ambition, and a commitment to outcomes that matter — for creators and companies alike.",
+      "Our relationships are built on transparency, shared values, and a commitment to outcomes that matter — for creators and companies alike.",
   },
   {
     icon: Lightbulb,
@@ -46,81 +46,32 @@ export default function About() {
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
               About <span className="text-gold-gradient">Lucaville Global</span>
             </h1>
-            <p className="text-muted text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Lucaville Global stands at the intersection of creativity, capital,
-              and global reach. We&apos;re moving beyond traditional production
-              models, bringing fresh takes to how content is financed, structured,
-              and amplified, to reflect today&apos;s market.
-            </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Why Now */}
+      {/* Our Mission — at top as thesis */}
       <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <AnimatedSection>
-              <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
-                Why Now
-              </p>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-                Built for This Moment
-              </h2>
-              <div className="section-divider mb-8" />
-              <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
-                <p>
-                  The international media space has entered a new phase —
-                  borderless, decentralized, and moving faster than legacy
-                  structures can support. Lucaville Global was launched now,
-                  because it&apos;s the ideal time to leverage three decades of
-                  experience across international partnerships, content, and
-                  enterprise-building. With that experience, we&apos;re poised to
-                  unlock value in a rapidly shifting ecosystem.
-                </p>
-                <p>
-                  Positioned ahead of the curve, we&apos;re crafting the frameworks
-                  that will define the next era of global storytelling.
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* The Name / Origin */}
-      <section className="py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
-            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-8">
-              The Origin
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              Our Mission
             </p>
             <blockquote className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed text-foreground/90 mb-8">
               &ldquo;Luca&rdquo; means the bringer of light.
             </blockquote>
-            <p className="text-muted text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
               Lucaville Global was founded with the mission of honoring that
               ideal in storytelling.
             </p>
-            <div className="section-divider mt-10" />
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* Our Mission */}
-      <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection>
-            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-8">
-              Our Mission
-            </p>
-            <p className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-8">
+            <div className="section-divider mb-8" />
+            <p className="text-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
               The most beautiful and compelling stories from around the world
               often linger in the shadows, waiting too long — or perpetually —
               for the spotlight their creative masterpieces merit. Lucaville
               Global was launched to remedy this cultural oversight.
             </p>
-            <p className="text-foreground/90 text-lg md:text-xl leading-relaxed mb-8">
+            <p className="text-foreground/80 text-lg md:text-xl leading-relaxed">
               As we build companies and content on a global scale, we&apos;re
               excited to weave a riveting tapestry from the threads of courage
               and grace found across continents. Profound narratives, and the
@@ -132,43 +83,92 @@ export default function About() {
         </div>
       </section>
 
+      {/* Who We Are */}
+      <section className="py-24">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection>
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              Who We Are
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              Creativity, Capital &amp; Global Reach
+            </h2>
+            <div className="section-divider mb-8" />
+            <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
+              <p>
+                Lucaville Global stands at the intersection of creativity, capital,
+                and global reach. We&apos;re moving beyond traditional production
+                models, bringing fresh takes to how content is financed, structured,
+                and amplified, to reflect today&apos;s market. Positioned ahead of
+                the curve, we&apos;re crafting the frameworks that will define the
+                next era of global storytelling.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Why Now */}
+      <section className="py-24 bg-charcoal-dark/50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection>
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              Why Now
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              Built for This Moment
+            </h2>
+            <div className="section-divider mb-8" />
+            <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
+              <p>
+                The international media space has entered a new phase —
+                borderless, decentralized, and moving faster than legacy
+                structures can support. Lucaville Global was launched now,
+                because it&apos;s the ideal time to leverage three decades of
+                experience across international partnerships, content, and
+                enterprise-building. With that experience, we&apos;re poised to
+                unlock value in a rapidly shifting ecosystem.
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Founder */}
       <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <AnimatedSection>
-              <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
-                Our Founder
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection>
+            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-4">
+              Our Founder
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+              Three Decades of Building Global Platforms
+            </h2>
+            <div className="section-divider mb-8" />
+            <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
+              <p>
+                Lucaville Global&apos;s founder and CEO, David Davoli, has focused
+                his career on building scalable global platforms to tell
+                compelling stories with world-class filmmakers from all over the
+                world. At Anonymous Content, he led their international
+                expansion, re-imagining and growing it into a cohesive, dynamic
+                and robust portfolio of joint ventures and creative partnerships
+                across five continents. At BRON Studios, he built an
+                international studio from the ground up — producing and financing
+                a diverse slate of projects including the multi-award-winning
+                series <em>Kin</em>, as well as <em>The Defeated</em>,{" "}
+                <em>That Dirty Black Bag</em>, <em>The Front Runner</em>,{" "}
+                <em>Ten Percent</em>, and <em>The Idol</em>.
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-                Three Decades of Building Global Platforms
-              </h2>
-              <div className="section-divider mb-8" />
-              <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
-                <p>
-                  Lucaville Global&apos;s founder and CEO, David Davoli, has focused
-                  his career on building scalable global platforms to tell
-                  compelling stories with world-class filmmakers from all over the
-                  world. At Anonymous Content, he led their international
-                  expansion, re-imagining and growing it into a cohesive, dynamic
-                  and robust portfolio of joint ventures and creative partnerships
-                  across five continents. At BRON Studios, he built an
-                  international studio from the ground up — producing and financing
-                  a diverse slate of projects including the multi-award-winning
-                  series <em>Kin</em>, as well as <em>The Defeated</em>,{" "}
-                  <em>That Dirty Black Bag</em>, <em>The Front Runner</em>,{" "}
-                  <em>Ten Percent</em>, and <em>The Idol</em>.
-                </p>
-                <p>
-                  At Lucaville Global we will continue such work, but now, with
-                  more agility and through a contemporary lens. Lucaville Global is
-                  partnering with filmmakers, creators, and independent companies
-                  to build ambitious projects worldwide — and to grow the ventures
-                  that support them.
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
+              <p>
+                At Lucaville Global we will continue such work, but now, with
+                more agility and through a contemporary lens. Lucaville Global is
+                partnering with filmmakers, creators, and independent companies
+                to build ambitious projects worldwide — and to grow the ventures
+                that support them.
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -199,6 +199,7 @@ export default function About() {
           </div>
         </div>
       </section>
+
       {/* Illumination CTA */}
       <section className="py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 text-center">

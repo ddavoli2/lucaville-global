@@ -76,7 +76,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
           >
-            <p className="text-gold/80 uppercase tracking-[0.4em] text-sm mb-6">
+            <p className="text-gold font-semibold uppercase tracking-[0.4em] text-base md:text-lg mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               Global Content &bull; Premium Storytelling
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ export default function Home() {
               delay: 0.2,
               ease: [0.21, 0.47, 0.32, 0.98],
             }}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8"
+            className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8"
           >
             Illuminating Stories the World{" "}
             <span className="text-gold-gradient">Needs to See</span>
@@ -99,7 +99,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-muted text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
+            className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
           >
             Lucaville Global partners with filmmakers, creators, and independent
             companies worldwide to build ambitious projects and scale the
@@ -119,12 +119,6 @@ export default function Home() {
               Our Projects
               <ArrowRight size={16} />
             </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 border border-gold/40 hover:border-gold text-gold hover:bg-gold/5 px-8 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
-            >
-              Get in Touch
-            </Link>
           </motion.div>
         </div>
 
@@ -143,8 +137,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {[
-              { value: "7+", label: "Seasons Produced" },
-              { value: "3+", label: "Films Produced" },
+              { value: "8+", label: "Seasons Produced" },
+              { value: "2+", label: "Films Produced" },
               { value: "8+", label: "Countries" },
               { value: "30", label: "Years Experience" },
               { value: "12+", label: "Platform Partners" },

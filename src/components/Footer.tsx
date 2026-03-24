@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted text-xs">
-            &copy; {new Date().getFullYear()} Lucaville Global. All rights
+            &copy; {new Date().getFullYear()} Lucaville Global, Inc. All rights
             reserved.
           </p>
           <div className="flex gap-6">

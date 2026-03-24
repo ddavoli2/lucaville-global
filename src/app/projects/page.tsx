@@ -5,12 +5,21 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const projects = [
   {
+    title: "The Idol",
+    category: "Drama",
+    format: "8 x 60\"",
+    region: "US",
+    network: "HBO",
+    image: "/images/the-idol-poster.jpg",
+    description:
+      "A pop star trying to stage a comeback after a mental breakdown enters a complicated and high-stakes relationship with a self-help guru and secret cult leader.",
+  },
+  {
     title: "KIN",
     category: "Crime Drama",
     format: "16 x 60\"",
     region: "Ireland",
     network: "AMC+",
-    status: "Released",
     image: "/images/kin-poster.jpg",
     description:
       "A boy is killed and his family embarks on a gangland war with an international cartel; but the Kinsellas have something the cartel does not: the unbreakable bonds of blood and family.",
@@ -21,7 +30,6 @@ const projects = [
     format: "8 x 60\"",
     region: "Italy",
     network: "AMC+",
-    status: "Released",
     image: "/images/tdbb-poster.jpg",
     description:
       "Red Bill is a ruthless bounty hunter who decapitates his victims and stuffs their heads into a dirty black bag rather than transporting their entire corpses.",
@@ -32,7 +40,6 @@ const projects = [
     format: "8 x 60\"",
     region: "UK",
     network: "Amazon Prime",
-    status: "Released",
     image: "/images/ten-percent-poster.jpg",
     description:
       "A London talent agency deals with personal and professional crises while catering to celebrity clients and scrambling to stay afloat after the sudden death of their founder.",
@@ -43,21 +50,9 @@ const projects = [
     format: "8 x 60\"",
     region: "Germany",
     network: "Netflix",
-    status: "Released",
     image: "/images/the-defeated-poster.jpg",
     description:
       "In 1946 Berlin, an American cop searches for his missing brother while helping a novice German policewoman fight the violent crimes engulfing the city.",
-  },
-  {
-    title: "Stephen King's Bag of Bones",
-    category: "Mini Series",
-    format: "2 x 120\"",
-    region: "US",
-    network: "A&E",
-    status: "Released",
-    image: "/images/bag-of-bones-poster.jpg",
-    description:
-      "Following his wife's sudden death, a bestselling author (Pierce Brosnan) retreats to his Maine lake house, where he is plagued by nightmares, ghostly visitations, and a dark, century-old town secret.",
   },
   {
     title: "The Snow Sister",
@@ -65,7 +60,6 @@ const projects = [
     format: "Feature",
     region: "Norway",
     network: "Netflix",
-    status: "Released",
     image: "/images/snow-sister-poster.jpg",
     description:
       "A grieving young boy who thinks Christmas is cancelled finds hope and friendship through a mysterious, joyful girl who helps him heal after the loss of his sister.",
@@ -76,21 +70,19 @@ const projects = [
     format: "Feature",
     region: "US",
     network: "Columbia Pictures / Sony Pictures Releasing",
-    status: "Released",
     image: "/images/front-runner-poster.jpg",
     description:
       "Gary Hart was going to be President. Instead he changed American politics forever.",
   },
   {
-    title: "The Idol",
-    category: "Drama",
-    format: "8 x 60\"",
+    title: "Stephen King's Bag of Bones",
+    category: "Mini Series",
+    format: "2 x 120\"",
     region: "US",
-    network: "HBO",
-    status: "Released",
-    image: "/images/the-idol-poster.jpg",
+    network: "A&E",
+    image: "/images/bag-of-bones-poster.jpg",
     description:
-      "A pop star trying to stage a comeback after a mental breakdown enters a complicated and high-stakes relationship with a self-help guru and secret cult leader.",
+      "Following his wife's sudden death, a bestselling author (Pierce Brosnan) retreats to his Maine lake house, where he is plagued by nightmares, ghostly visitations, and a dark, century-old town secret.",
   },
 ];
 
@@ -106,28 +98,18 @@ export default function Projects() {
               Our Work
             </p>
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
-              Projects
+              Featured Projects
             </h1>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              Stories that deserve the spotlight — illuminated.
+              Projects executive produced by David Davoli, Founder &amp; CEO of Lucaville Global.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Featured Projects */}
+      {/* Projects Grid */}
       <section className="py-24 bg-charcoal-dark/50">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
-              Featured Projects
-            </h2>
-            <p className="text-muted text-base max-w-2xl mx-auto mb-4">
-              Projects executive produced by David Davoli.
-            </p>
-            <div className="section-divider" />
-          </AnimatedSection>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, i) => (
               <AnimatedSection key={project.title} delay={i * 0.1}>

@@ -47,7 +47,7 @@ export default function Team() {
                 </p>
                 <div className="section-divider mb-8 !mx-0" />
 
-                <div className="space-y-5 text-foreground/80 leading-relaxed">
+                <div className="space-y-5 text-foreground/80 leading-relaxed text-center">
                   <p>
                     David Davoli is a strategic media executive and the Founder
                     and CEO of Lucaville Global, a company partnering with

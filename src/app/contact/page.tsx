@@ -31,8 +31,9 @@ export default function Contact() {
               Contact <span className="text-gold-gradient">Us</span>
             </h1>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              Ready to explore how Lucaville Global can support your objectives?
-              We&apos;d welcome the opportunity to connect.
+              While we are unable to accept unsolicited submissions, we would
+              love to hear from you. Ready to explore how Lucaville Global can
+              support your objectives? We&apos;d welcome the opportunity to connect.
             </p>
           </AnimatedSection>
         </div>
