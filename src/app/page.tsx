@@ -132,6 +132,25 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* News Banner */}
+      <section className="border-y border-gold/10 bg-charcoal/80">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <Link
+            href="https://deadline.com/2026/03/lucaville-titanus-jv-italy-lawrence-bender-dario-argento-1236762802/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 group"
+          >
+            <span className="text-gold text-xs uppercase tracking-wider font-semibold">Latest News</span>
+            <span className="text-muted/30">|</span>
+            <span className="text-foreground/70 text-sm group-hover:text-gold transition-colors">
+              Lucaville Global Launches JV With Italy&apos;s Titanus — First Projects Include &apos;The Treasure of San Gennaro&apos; With Lawrence Bender
+            </span>
+            <ArrowRight size={14} className="text-gold/60 group-hover:text-gold transition-colors" />
+          </Link>
+        </div>
+      </section>
+
       {/* Stats Bar */}
       <section className="border-y border-gold/10 bg-charcoal-dark/50">
         <div className="max-w-7xl mx-auto px-6 py-12">
