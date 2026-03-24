@@ -135,13 +135,12 @@ export default function Home() {
       {/* Stats Bar */}
       <section className="border-y border-gold/10 bg-charcoal-dark/50">
         <div className="max-w-7xl mx-auto px-6 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { value: "10+", label: "Seasons Produced" },
               { value: "3+", label: "Films Produced" },
               { value: "8+", label: "Countries" },
               { value: "30", label: "Years Experience" },
-              { value: "12+", label: "Platform Partners" },
             ].map((stat, i) => (
               <AnimatedSection key={stat.label} delay={i * 0.1}>
                 <div className="text-center">
