@@ -50,7 +50,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-8 flex-1">
+          <div className="hidden xl:flex items-center gap-8 flex-1 self-end pb-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
