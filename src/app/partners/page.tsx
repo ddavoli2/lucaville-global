@@ -12,6 +12,13 @@ const partners = [
     description:
       "Lucaville Global has formed a joint venture with Titanus, one of Italy's most storied film and television studios. Founded in 1904, Titanus has been a cornerstone of Italian cinema for over a century, producing some of the most celebrated films in the country's history. Together, Lucaville and Titanus are developing an ambitious slate of premium content that bridges Italian storytelling traditions with global audiences — beginning with a remake of the classic heist comedy The Treasure of San Gennaro, produced alongside Lawrence Bender.",
   },
+  {
+    name: "Secuoya Studios",
+    logo: "/images/secuoya-logo.jpg",
+    url: "https://www.secuoyastudios.com",
+    description:
+      "Lucaville Global provides strategic advisory and international sales consulting to Secuoya Studios, a leading Spanish production studio with growing international reach. Known for its diverse slate of premium scripted series across thriller, crime, and drama, Secuoya has built a strong reputation for bold, high-quality Spanish-language storytelling, alongside films, entertainment formats, and documentaries. Lucaville Global is supporting the studio in positioning its content with English-language buyers and global platforms.",
+  },
 ];
 
 export default function Partners() {
@@ -37,7 +44,7 @@ export default function Partners() {
 
       {/* Partners */}
       <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 space-y-12">
           {partners.map((partner, i) => (
             <AnimatedSection key={partner.name} delay={i * 0.15}>
               <div className="bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500 p-10 lg:p-14">
