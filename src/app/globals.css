@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #0a0a0a;
-  --color-foreground: #e8e8e8;
-  --color-gold: #C9A84C;
-  --color-gold-light: #D4B95E;
-  --color-gold-dark: #A8893D;
-  --color-charcoal: #1a1a1a;
-  --color-charcoal-light: #2a2a2a;
-  --color-charcoal-dark: #111111;
-  --color-muted: #888888;
+  --color-background: #07070d;
+  --color-foreground: #d8d8dc;
+  --color-gold: #FF6B3D;
+  --color-gold-light: #FF8A65;
+  --color-gold-dark: #E85D26;
+  --color-teal: #00D4AA;
+  --color-teal-light: #33DDBB;
+  --color-teal-dark: #00B894;
+  --color-charcoal: #0d0d14;
+  --color-charcoal-light: #141420;
+  --color-charcoal-dark: #07070d;
+  --color-warm: #1a1210;
+  --color-warm-light: #231812;
+  --color-muted: #7a7a8e;
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-space-grotesk);
 }
 
 body {
@@ -20,46 +25,53 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* Gold gradient text utility */
+/* Film grain texture overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient text — coral to teal */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #C9A84C, #D4B95E, #A8893D);
+  background: linear-gradient(135deg, #FF6B3D, #FF8A65, #00D4AA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Gold border gradient */
-.border-gold-gradient {
-  border-image: linear-gradient(135deg, #C9A84C, #D4B95E) 1;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0a0a0a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #C9A84C;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #D4B95E;
-}
-
-/* Section divider */
+/* Section divider — solid coral */
 .section-divider {
-  width: 80px;
+  width: 48px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #C9A84C, transparent);
-  margin: 0 auto;
+  background: #FF6B3D;
+}
+
+/* Selection */
+::selection {
+  background: rgba(255, 107, 61, 0.25);
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 107, 61, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 61, 0.3);
 }

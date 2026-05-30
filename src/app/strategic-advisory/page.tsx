@@ -114,18 +114,17 @@ export default function StrategicAdvisory() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,168,76,0.06),transparent_60%)]" />
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <AnimatedSection className="text-center">
-            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-6">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <AnimatedSection>
+            <p className="text-gold/60 text-xs uppercase tracking-[0.2em] mb-4">
               Our Services
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
               Strategic{" "}
               <span className="text-gold-gradient">Advisory</span>
             </h1>
-            <p className="text-muted text-lg max-w-3xl mx-auto">
+            <p className="text-muted text-lg max-w-2xl">
               Lucaville Global provides strategic advisory, international sales,
               executive production, and partnership development to entertainment
               companies operating internationally — drawing on three decades of
@@ -137,39 +136,31 @@ export default function StrategicAdvisory() {
       </section>
 
       {/* Services */}
-      <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
-              How We Help
-            </h2>
-            <div className="section-divider" />
-          </AnimatedSection>
+      <section className="py-24 border-t border-white/[0.04]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <SectionHeading title="How We Help" label="Services" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.04]">
             {services.map((service, i) => (
-              <AnimatedSection key={service.title} delay={i * 0.1}>
-                <div className="group p-8 lg:p-10 bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500 text-center h-full">
+              <AnimatedSection key={service.title} delay={Math.min(i * 0.08, 0.4)}>
+                <div className="bg-background p-10 md:p-12 h-full">
                   <service.icon
-                    className="text-gold mx-auto mb-4"
-                    size={32}
+                    className="text-gold/60 mb-4"
+                    size={24}
                     strokeWidth={1.5}
                   />
-                  <h3 className="font-serif text-2xl font-semibold mb-4">
+                  <h3 className="font-serif text-xl font-semibold mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-muted leading-relaxed mb-6">
+                  <p className="text-muted text-sm leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  <p className="text-gold/60 text-xs uppercase tracking-wider mb-4">
+                  <p className="text-gold/50 text-[11px] uppercase tracking-[0.2em] mb-3">
                     Key Capabilities
                   </p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5">
                     {service.features.map((f) => (
-                      <li
-                        key={f}
-                        className="text-muted text-sm"
-                      >
+                      <li key={f} className="text-muted/80 text-xs">
                         {f}
                       </li>
                     ))}
@@ -182,18 +173,19 @@ export default function StrategicAdvisory() {
       </section>
 
       {/* Expertise */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-24 border-t border-white/[0.04] bg-charcoal/30">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <SectionHeading
             title="30 Years Across the Value Chain"
             subtitle="Our advisory is grounded in direct operational experience — not theory."
+            label="Expertise"
           />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {expertise.map((item, i) => (
-              <AnimatedSection key={item} delay={i * 0.08}>
-                <div className="group text-center p-6 border border-gold/10 hover:border-gold/30 transition-all duration-500">
-                  <p className="text-sm text-muted group-hover:text-gold transition-colors font-semibold">
+              <AnimatedSection key={item} delay={i * 0.06}>
+                <div className="group text-center p-6 border border-white/[0.04] hover:border-white/[0.08] transition-all duration-500">
+                  <p className="text-sm text-muted group-hover:text-gold transition-colors font-medium">
                     {item}
                   </p>
                 </div>
@@ -204,20 +196,20 @@ export default function StrategicAdvisory() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="py-24 md:py-32 border-t border-white/[0.04]">
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
           <AnimatedSection>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
               Every Engagement Begins with a Conversation
             </h2>
-            <p className="text-muted text-lg mb-10">
+            <p className="text-muted text-lg mb-10 max-w-2xl">
               Whether you&apos;re looking to expand internationally, structure a
               co-production, or position your slate for global buyers — we&apos;d
               welcome the opportunity to discuss how Lucaville can help.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-charcoal-dark font-semibold px-10 py-4 transition-all duration-300 uppercase tracking-wider text-sm"
+              className="inline-flex items-center gap-3 bg-gold hover:bg-gold-light text-background font-semibold px-8 py-4 transition-all duration-300 text-sm tracking-[0.15em] uppercase"
             >
               Get In Touch
               <ArrowRight size={16} />

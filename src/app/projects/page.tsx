@@ -130,37 +130,36 @@ export default function Projects() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,168,76,0.06),transparent_60%)]" />
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <AnimatedSection className="text-center">
-            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-6">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <AnimatedSection>
+            <p className="text-gold/60 text-xs uppercase tracking-[0.2em] mb-4">
               Our Work
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
               Projects
             </h1>
-            <p className="text-muted text-lg max-w-2xl mx-auto">
-              Projects executive produced by David Davoli, Founder &amp; CEO of Lucaville Global.
+            <p className="text-muted text-lg max-w-xl">
+              Executive produced by David Davoli, Founder &amp; CEO of Lucaville
+              Global.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
       {/* Projects Grid */}
-      <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className="py-24 border-t border-white/[0.04]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-14">
             {projects.map((project, i) => (
-              <AnimatedSection key={project.title} delay={i * 0.1}>
+              <AnimatedSection key={project.title} delay={i * 0.08}>
                 <a
                   href={project.trailer}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group h-full bg-charcoal border border-gold/10 hover:border-gold/30 transition-all duration-500 flex flex-col overflow-hidden cursor-pointer"
+                  className="group block"
                 >
-                  {/* Poster */}
-                  <div className="relative aspect-[2/3] overflow-hidden">
+                  <div className="relative aspect-[2/3] overflow-hidden mb-4">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -168,48 +167,36 @@ export default function Projects() {
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                       unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60" />
-                    {/* Play button overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="w-16 h-16 rounded-full bg-gold/90 flex items-center justify-center">
-                        <svg className="w-7 h-7 text-charcoal-dark ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center">
+                        <svg
+                          className="w-6 h-6 text-background ml-0.5"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M8 5v14l11-7z" />
                         </svg>
                       </div>
                     </div>
                   </div>
 
-                  {/* Info */}
-                  <div className="p-8 flex-1 flex flex-col">
-                    <div className="flex items-center gap-3 mb-3 flex-wrap">
-                      <span className="text-gold/70 text-xs uppercase tracking-wider">
-                        {project.category}
-                      </span>
-                      <span className="text-muted/30">|</span>
-                      <span className="text-muted/60 text-xs">
-                        {project.format}
-                      </span>
-                      <span className="text-muted/30">|</span>
-                      <span className="text-muted/60 text-xs">
-                        {project.region}
-                      </span>
-                      <span className="text-muted/30">|</span>
-                      <span className="text-muted/60 text-xs">
-                        {project.year}
-                      </span>
-                    </div>
-                    <h3 className="font-serif text-2xl font-bold mb-2 group-hover:text-gold transition-colors">
-                      {project.title}
-                    </h3>
-                    {project.network && (
-                      <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-3">
-                        {project.network}
-                      </p>
-                    )}
-                    <p className="text-muted text-sm leading-relaxed flex-1">
-                      {project.description}
-                    </p>
+                  <div className="flex items-center gap-3 mb-2 text-xs text-muted/60">
+                    <span>{project.category}</span>
+                    <span className="w-1 h-1 rounded-full bg-muted/30" />
+                    <span>{project.format}</span>
+                    <span className="w-1 h-1 rounded-full bg-muted/30" />
+                    <span>{project.year}</span>
                   </div>
+                  <h3 className="font-serif text-xl font-bold group-hover:text-gold transition-colors mb-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-gold/60 text-xs uppercase tracking-[0.1em] mb-3">
+                    {project.network}
+                  </p>
+                  <p className="text-muted text-sm leading-relaxed">
+                    {project.description}
+                  </p>
                 </a>
               </AnimatedSection>
             ))}

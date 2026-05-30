@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Calendar, ExternalLink } from "lucide-react";
+import { Calendar, ExternalLink } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const articles = [
@@ -45,7 +45,8 @@ const articles = [
   {
     date: "September 2024",
     category: "Press",
-    title: "San Sebastian: CAA Media Finance Unveils Creative Investors' Conference",
+    title:
+      "San Sebastian: CAA Media Finance Unveils Creative Investors' Conference",
     excerpt:
       "Variety covers the launch of the Creative Investors' Conference at San Sebastian Film Festival, an event connecting entertainment industry investors with creative financing opportunities in the global film sector.",
     url: "https://variety.com/2024/film/global/caa-media-finance-creative-investors-conference-2-1236145771/",
@@ -54,7 +55,8 @@ const articles = [
   {
     date: "June 2024",
     category: "Press",
-    title: "Rio2C 2024: Globo Discussed Opportunities for Entertainment Globalization",
+    title:
+      "Rio2C 2024: Globo Discussed Opportunities for Entertainment Globalization",
     excerpt:
       "Señal News covers a Rio2C panel exploring how local entertainment companies can expand globally, with industry leaders discussing co-productions, format sales, and new partnership strategies in the international market.",
     url: "https://senalnews.com/en/events/rio2c-2024-globo-discussed-opportunities-for-entertainment-globalization-",
@@ -72,7 +74,8 @@ const articles = [
   {
     date: "February 2022",
     category: "Podcast",
-    title: "C21 Podcast: Kelly Edwards, David Davoli, Kristen V Carter & Claire Finn",
+    title:
+      "C21 Podcast: Kelly Edwards, David Davoli, Kristen V Carter & Claire Finn",
     excerpt:
       "David Davoli joins the C21 podcast to discuss BRON Studios' expanding television operations alongside industry leaders covering topics in content creation and the evolving media landscape.",
     url: "https://www.c21media.net/c21podcasts/kelly-edwards-david-davoli-kristen-v-carter-claire-finn/",
@@ -127,7 +130,8 @@ const articles = [
   {
     date: "February 2021",
     category: "Press",
-    title: "AMC+ Scores Trio of Acclaimed Crime Dramas Kin, Too Close, and Cold Courage",
+    title:
+      "AMC+ Scores Trio of Acclaimed Crime Dramas Kin, Too Close, and Cold Courage",
     excerpt:
       "AMC+ announces the acquisition of three acclaimed crime dramas including the Irish-set series Kin with Charlie Cox, launching on the streaming service in 2021.",
     url: "https://www.amc.com/blogs/amc-scores-trio-of-acclaimed-crime-dramas-kin-too-close-and-cold-courage--1010176",
@@ -145,7 +149,8 @@ const articles = [
   {
     date: "April 2020",
     category: "Press",
-    title: "What's in a Name? How U.S. Talent Buoys Sales of European Drama",
+    title:
+      "What's in a Name? How U.S. Talent Buoys Sales of European Drama",
     excerpt:
       "Variety examines how casting American actors in European television dramas, including Shadowplay (The Defeated), enhances their commercial appeal and sales potential in international markets.",
     url: "https://variety.com/2020/biz/actors/miptv-us-talent-buoys-european-drama-sales-helen-hunt-world-on-fire-shadowplay-1203549970/",
@@ -166,17 +171,16 @@ export default function News() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,168,76,0.06),transparent_60%)]" />
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <AnimatedSection className="text-center">
-            <p className="text-gold/80 uppercase tracking-[0.3em] text-sm mb-6">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <AnimatedSection>
+            <p className="text-gold/60 text-xs uppercase tracking-[0.2em] mb-4">
               Perspectives
             </p>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
               News
             </h1>
-            <p className="text-muted text-lg max-w-2xl mx-auto">
+            <p className="text-muted text-lg max-w-xl">
               The latest from Lucaville Global.
             </p>
           </AnimatedSection>
@@ -184,47 +188,43 @@ export default function News() {
       </section>
 
       {/* Articles */}
-      <section className="py-24 bg-charcoal-dark/50">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="space-y-8">
+      <section className="py-24 border-t border-white/[0.04]">
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <div className="space-y-6">
             {articles.map((article, i) => (
-              <AnimatedSection key={article.title} delay={i * 0.1}>
+              <AnimatedSection key={article.title} delay={Math.min(i * 0.05, 0.4)}>
                 <a
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block"
+                  className="block group"
                 >
-                  <article className="group p-8 lg:p-10 bg-charcoal/50 border border-gold/10 hover:border-gold/30 transition-all duration-500 cursor-pointer">
-                    <div>
-                      <div>
-                        <div className="flex items-center gap-4 mb-4">
-                          <span className="text-gold/70 text-xs uppercase tracking-wider">
-                            {article.category}
+                  <article className="p-8 lg:p-10 border border-white/[0.04] hover:border-white/[0.08] bg-charcoal/20 hover:bg-charcoal/40 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-4 text-xs text-muted/60">
+                      <span className="text-gold/60 uppercase tracking-[0.15em]">
+                        {article.category}
+                      </span>
+                      <span className="w-1 h-1 rounded-full bg-muted/30" />
+                      <span className="flex items-center gap-1">
+                        <Calendar size={11} />
+                        {article.date}
+                      </span>
+                      {article.source && (
+                        <>
+                          <span className="w-1 h-1 rounded-full bg-muted/30" />
+                          <span className="flex items-center gap-1">
+                            <ExternalLink size={11} />
+                            {article.source}
                           </span>
-                          <span className="text-muted/30">|</span>
-                          <span className="text-muted/60 text-xs flex items-center gap-1">
-                            <Calendar size={12} />
-                            {article.date}
-                          </span>
-                          {article.source && (
-                            <>
-                              <span className="text-muted/30">|</span>
-                              <span className="text-muted/60 text-xs flex items-center gap-1">
-                                <ExternalLink size={12} />
-                                {article.source}
-                              </span>
-                            </>
-                          )}
-                        </div>
-                        <h3 className="font-serif text-xl lg:text-2xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">
-                          {article.title}
-                        </h3>
-                        <p className="text-muted text-sm leading-relaxed">
-                          {article.excerpt}
-                        </p>
-                      </div>
+                        </>
+                      )}
                     </div>
+                    <h3 className="font-serif text-lg lg:text-xl font-semibold mb-3 group-hover:text-gold transition-colors duration-300">
+                      {article.title}
+                    </h3>
+                    <p className="text-muted text-sm leading-relaxed">
+                      {article.excerpt}
+                    </p>
                   </article>
                 </a>
               </AnimatedSection>
