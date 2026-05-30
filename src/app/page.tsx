@@ -121,26 +121,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── SHOWREEL ─── Contained cinematic video */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
-          <AnimatedSection>
-            <div className="relative aspect-[21/9] overflow-hidden border border-white/[0.06]">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
-              >
-                <source src="/images/hero-video-new.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-background/20" />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* ─── NEWS TICKER ─── */}
       <div className="border-y border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4">
