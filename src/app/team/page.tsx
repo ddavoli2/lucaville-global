@@ -158,7 +158,22 @@ export default function Team() {
                 </div>
 
                 <div className="space-y-5 text-foreground/75 leading-relaxed">
-                  <p>Bio coming soon.</p>
+                  <p>
+                    Concetta Froio is a Coordinator of Global Film and TV at
+                    Lucaville Global, where she supports the development of
+                    ambitious projects with creators and independent companies
+                    worldwide. Fluent in Italian and English, she grew up between
+                    Italy and the United States, and brings an international
+                    perspective to how stories are made and shared across borders.
+                  </p>
+                  <p>
+                    A graduate of Wesleyan University, Froio has built her career
+                    across the creative and business sides of film, with
+                    experience at Anonymous Content, Magnolia Pictures, and NEON.
+                    Her work spans publicity, development, and production, from
+                    shaping press campaigns for acclaimed films to editing,
+                    programming, and curating film for the screen.
+                  </p>
                 </div>
               </div>
             </div>
